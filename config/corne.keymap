@@ -73,7 +73,7 @@
         };
 
         Ben {
-            bindings = <&none>;
+            bindings = <&ben>;
             key-positions = <32 33 34>;
         };
 
