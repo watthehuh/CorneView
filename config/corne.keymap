@@ -226,10 +226,10 @@
 
             label = "Lower";
             bindings = <
-&kp LCTRL   &Mouse2   &kp UP    &MouseClick  &kp PAGE_UP    &kp LC(C)    &kp LG(NUMBER_1)  &kp COLON   &kp N7        &kp NUMBER_8  &kp NUMBER_9  &kp DELETE
-&kp LSHIFT  &kp LEFT  &kp DOWN  &kp RIGHT    &kp PAGE_DOWN  &kp LC(X)    &kp LG(N5)        &kp SLASH   &kp N4        &kp N5        &kp NUMBER_6  &kp BACKSPACE
-&mo 3       &kp HOME  &kp LALT  &kp END      &kp TAB        &kp LC(V)    &kp LG(N8)        &kp PERIOD  &kp N1        &kp NUMBER_2  &kp N3        &kp RET
-                                &none        &kp ESC        &mo 4        &none             &kp SPACE   &kp NUMBER_0
+&kp LCTRL   &Mouse2   &kp UP    &Mouse1    &kp PAGE_UP    &kp LC(C)    &kp LG(NUMBER_1)  &kp COLON   &kp N7        &kp NUMBER_8  &kp NUMBER_9  &kp DELETE
+&kp LSHIFT  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PAGE_DOWN  &kp LC(X)    &kp LG(N5)        &kp SLASH   &kp N4        &kp N5        &kp NUMBER_6  &kp BACKSPACE
+&mo 3       &kp HOME  &kp LALT  &kp END    &kp TAB        &kp LC(V)    &kp LG(N8)        &kp PERIOD  &kp N1        &kp NUMBER_2  &kp N3        &kp RET
+                                &none      &kp ESC        &mo 4        &none             &kp SPACE   &kp NUMBER_0
             >;
         };
 
@@ -242,16 +242,16 @@
 
             label = "Raise";
             bindings = <
-&kp LCTRL       &Mouse2           &kp KP_NUMBER_8    &MouseClick      &trans  &trans        &none  &kp EXCL       &kp AT    &kp STAR   &kp LPAR  &kp RPAR
-&kp LEFT_SHIFT  &kp KP_NUMBER_4   &kp KP_NUMBER_2    &kp KP_NUMBER_6  &trans  &trans        &none  &kp SEMICOLON  &kp DQT   &kp EQUAL  &kp BSLH  &kp DEL
-&kp TILDE       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans           &trans  &trans        &none  &kp COLON      &kp APOS  &kp MINUS  &kp FSLH  &kp QUESTION
-                                                     &none            &none   &kp LSHIFT    &mo 4  &none          &trans
+&kp LCTRL       &kp KP_DOT        &kp KP_NUMBER_8    &kp NUMBER_0     &kp PAGE_UP    &trans        &none  &kp EXCL       &kp AT    &kp STAR   &kp LPAR  &kp RPAR
+&kp LEFT_SHIFT  &kp KP_NUMBER_4   &kp KP_NUMBER_2    &kp KP_NUMBER_6  &kp PAGE_DOWN  &trans        &none  &kp SEMICOLON  &kp DQT   &kp EQUAL  &kp BSLH  &kp DEL
+&kp TILDE       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans           &trans         &trans        &none  &kp COLON      &kp APOS  &kp MINUS  &kp FSLH  &kp QUESTION
+                                                     &none            &none          &kp LSHIFT    &mo 4  &none          &trans
             >;
         };
 
         layer_3 {
             bindings = <
-&kp LG(C_PAUSE)  &Mouse2         &kp LG(UP_ARROW)  &MouseClick    &kp LC(PAGE_UP)    &none     &none  &kp F1   &kp F2   &kp F3      &kp F4         &kp F5
+&kp LG(C_PAUSE)  &Mouse2         &kp LG(UP_ARROW)  &Mouse1        &kp LC(PAGE_UP)    &none     &none  &kp F1   &kp F2   &kp F3      &kp F4         &kp F5
 &kp LEFT_SHIFT   &kp LG(LEFT)    &kp LG(DOWN)      &kp LG(RIGHT)  &kp LC(PAGE_DOWN)  &none     &none  &kp F6   &kp F7   &kp F8      &kp F9         &kp F10
 &trans           &macro_doherty  &BENLLW           &Joyce18889    &teresachng        &none     &none  &kp F11  &kp F12  &kp LS(F2)  &kp LC(LA(A))  &kp LA(LC(NUMBER_1))
                                                    &none          &trans             &kp F5    &none  &none    &none
