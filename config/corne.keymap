@@ -188,6 +188,14 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+        MouseClick: MouseClick {
+            compatible = "zmk,behavior-tap-dance";
+            label = "MOUSECLICK";
+            #binding-cells = <0>;
+            bindings =
+                <&Mouse1>,
+                <&kp KP_NUMBER_0>;
+        };
     };
 
     keymap {
