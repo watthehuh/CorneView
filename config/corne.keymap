@@ -242,7 +242,7 @@
 
             label = "Raise";
             bindings = <
-&kp LCTRL       &kp KP_DOT        &kp KP_NUMBER_8    &kp NUMBER_0     &kp PAGE_UP    &trans        &none  &kp EXCL       &kp AT    &kp STAR   &kp LPAR  &kp RPAR
+&kp LCTRL       &Mouse2           &kp KP_NUMBER_8    &Mouse1          &kp PAGE_UP    &trans        &none  &kp EXCL       &kp AT    &kp STAR   &kp LPAR  &kp RPAR
 &kp LEFT_SHIFT  &kp KP_NUMBER_4   &kp KP_NUMBER_2    &kp KP_NUMBER_6  &kp PAGE_DOWN  &trans        &none  &kp SEMICOLON  &kp DQT   &kp EQUAL  &kp BSLH  &kp DEL
 &kp TILDE       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans           &trans         &trans        &none  &kp COLON      &kp APOS  &kp MINUS  &kp FSLH  &kp QUESTION
                                                      &none            &none          &kp LSHIFT    &mo 4  &none          &trans
@@ -251,10 +251,10 @@
 
         layer_3 {
             bindings = <
-&kp LG(C_PAUSE)  &Mouse2         &kp LG(UP_ARROW)  &Mouse1        &kp LC(PAGE_UP)    &none     &none  &kp F1   &kp F2   &kp F3      &kp F4         &kp F5
-&kp LEFT_SHIFT   &kp LG(LEFT)    &kp LG(DOWN)      &kp LG(RIGHT)  &kp LC(PAGE_DOWN)  &none     &none  &kp F6   &kp F7   &kp F8      &kp F9         &kp F10
-&trans           &macro_doherty  &BENLLW           &Joyce18889    &teresachng        &none     &none  &kp F11  &kp F12  &kp LS(F2)  &kp LC(LA(A))  &kp LA(LC(NUMBER_1))
-                                                   &none          &trans             &kp F5    &none  &none    &none
+&kp LG(C_PAUSE)  &kp KP_DOT      &kp LG(UP_ARROW)  &kp KP_NUMBER_0  &kp LC(PAGE_UP)    &none     &none  &kp F1   &kp F2   &kp F3      &kp F4         &kp F5
+&kp LEFT_SHIFT   &kp LG(LEFT)    &kp LG(DOWN)      &kp LG(RIGHT)    &kp LC(PAGE_DOWN)  &none     &none  &kp F6   &kp F7   &kp F8      &kp F9         &kp F10
+&trans           &macro_doherty  &BENLLW           &Joyce18889      &teresachng        &none     &none  &kp F11  &kp F12  &kp LS(F2)  &kp LC(LA(A))  &kp LA(LC(NUMBER_1))
+                                                   &none            &trans             &kp F5    &none  &none    &none
             >;
         };
 
