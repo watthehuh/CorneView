@@ -202,12 +202,6 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-            //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
-
             label = "Base";
             bindings = <
 &hm LCTRL Q  &kp W  &kp E  &kp R  &kp T       &kp LG(NUMBER_1)    &kp LC(C)     &kp Y      &kp U  &kp I      &kp O    &hm LGUI P
@@ -218,12 +212,6 @@
         };
 
         lower_layer {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-            // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-            // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-            //                    |BTCLR|     | SPC |   | ENT |     | ALT |
-
             label = "Lower";
             bindings = <
 &kp LCTRL   &kp F14   &kp UP    &kp F13    &kp F16  &kp LC(C)    &kp LG(NUMBER_1)  &kp COLON   &kp N7        &kp NUMBER_8  &kp NUMBER_9  &kp DELETE
@@ -234,12 +222,6 @@
         };
 
         raise_layer {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-            // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-            // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
-
             label = "Raise";
             bindings = <
 &kp LCTRL       &kp F14           &kp LS(LC(UP))     &kp F13            &kp F16  &trans        &none  &kp EXCL       &kp AT    &kp STAR   &kp LPAR  &kp RPAR
@@ -251,7 +233,7 @@
 
         layer_3 {
             bindings = <
-&kp LG(C_PAUSE)  &kp F14           &kp LS(LC(UP_ARROW))  &kp F13            &kp LC(PAGE_UP)    &none     &none  &kp F1   &kp F2   &kp F3      &kp F4         &kp F5
+&kp LG(C_PAUSE)  &Mouse2           &kp LS(LC(UP_ARROW))  &Mouse1            &kp LC(PAGE_UP)    &none     &none  &kp F1   &kp F2   &kp F3      &kp F4         &kp F5
 &kp LEFT_SHIFT   &kp LC(LS(LEFT))  &kp LS(LC(DOWN))      &kp LS(LC(RIGHT))  &kp LC(PAGE_DOWN)  &none     &none  &kp F6   &kp F7   &kp F8      &kp F9         &kp F10
 &trans           &macro_doherty    &Joyce18889           &Joyce18889        &teresachng        &none     &none  &kp F11  &kp F12  &kp LS(F2)  &kp LC(LA(A))  &kp LA(LC(NUMBER_1))
                                                          &none              &trans             &kp F5    &none  &none    &none
@@ -268,4 +250,3 @@
         };
     };
 };
-
